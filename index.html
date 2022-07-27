@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+    <span id="theme" onclick="changeTheme()">
+        <svg width="32px" height="32px" viewBox="0 0 32 32" id="icon" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: none;
+                }
+              </style>
+            </defs>
+            <rect x="15" y="2" width="2" height="5"></rect>
+            <rect x="21.6675" y="6.8536" width="4.958" height="1.9998" transform="translate(1.5191 19.3744) rotate(-45)"></rect>
+            <rect x="25" y="15" width="5" height="2"></rect>
+            <rect x="23.1466" y="21.6675" width="1.9998" height="4.958" transform="translate(-10.0018 24.1465) rotate(-45)"></rect>
+            <rect x="15" y="25" width="2" height="5"></rect>
+            <rect x="5.3745" y="23.1466" width="4.958" height="1.9998" transform="translate(-14.7739 12.6256) rotate(-45)"></rect>
+            <rect x="2" y="15" width="5" height="2"></rect>
+            <rect x="6.8536" y="5.3745" width="1.9998" height="4.958" transform="translate(-3.253 7.8535) rotate(-45)"></rect>
+            <path d="M16,12a4,4,0,1,1-4,4,4.0045,4.0045,0,0,1,4-4m0-2a6,6,0,1,0,6,6,6,6,0,0,0-6-6Z"></path>
+            <rect id="_Transparent_Rectangle_" data-name="<Transparent Rectangle>" class="cls-1" width="32" height="32"></rect>
+          </svg>
+    </span>
+   <div id="root">
+        <div class="main">
+            <h1 id="welcome-h1">
+                Readify
+            </h1>
+            <div>
+                <input 
+                type="search" 
+                id="searchBar" 
+                name="url"
+                placeholder="Input url...">
+            <button onclick="route()">Extract</button>
+            </div>
+            <span id="welcome">
+                Input an URL to extract text for easy reading from any page.
+            </span>
+        </div>
+   </div> 
+
+   <script src="./index.js"></script>
+</body>
+</html>

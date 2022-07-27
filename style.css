@@ -1,0 +1,327 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+@font-face {
+    font-family: "Lyon Display";
+    src: url(./fonts/Lyon\ Display\ Bold\ Italic.otf);
+  }
+
+  @font-face {
+    font-family: "Media77";
+    src: url(./fonts/Media77-Regular.otf);
+  }
+  
+  
+  /*------Themes-------*/
+  
+  .dark {
+    background-color: #181818;
+    color: white;
+    opacity: 1;
+  }
+  
+  .light {
+    background-color: #FCF7F4;
+    color: #181818;
+  }
+  
+  /*------Basics-------*/
+  
+  html {
+    font-size: clamp(16px, 14px, 18px);
+    height: -webkit-fill-available;
+  }
+
+
+#welcome {
+    margin: 2rem;
+}
+
+#welcome-h1 {
+    font-size: 10vh;
+}
+
+input {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    width: 15rem;
+    height: 3rem;
+    border-radius: 5px 0 0 5px;
+    padding-left: 1rem;
+    border-style: solid;
+    border-color: gray;
+}
+
+button {
+    height: 3rem;
+    border-radius: 0 5px 5px 0;
+    margin-left: 0;
+    color: inherit;
+    background-color: inherit;
+    border-style: solid;
+}
+
+button:hover {
+    -webkit-transition-duration: 200ms;
+         -o-transition-duration: 200ms;
+            transition-duration: 200ms;
+    cursor: pointer;
+    border-style: dashed;
+}
+
+button:active {
+    -webkit-filter: invert(100%);
+            filter: invert(100%);
+}
+
+
+body {
+    height: 100vh;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: 300ms linear;
+    -o-transition: 300ms linear;
+    transition: 300ms linear;
+    padding: 3vw;
+}
+
+
+.main {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+  
+  h1 {
+    font-size: 2rem;
+    opacity: 1;
+    font-family: "Lyon Display";
+    margin: 1rem;
+  }
+  
+  h2 {
+    font-size: clamp(1.5rem, 2rem, 2.5rem);
+    opacity: 0.9;
+    font-family: "Lora";
+    line-height: clamp(2rem, 2.5rem, 4rem);
+    font-weight: 100;
+    margin-top: 0;
+  }
+  
+  p {
+    font-family: 'Media77';
+    font-size: clamp(1rem, 2vw , 1.2rem);
+    line-height: 1.5;
+    opacity: 0.85;
+    font-weight: 300;
+
+    max-width: clamp(60ch, 55vw, 80ch);
+    padding-left: 3ch;
+    padding-right: 3ch;
+  }
+  
+  a {
+    opacity: 0.7;
+    font-size: clamp(0.7rem, 0.8rem, 0.9rem);
+    color: white;
+    text-decoration: none;
+  }
+
+
+  #theme {
+    position: fixed;
+    right: 3vw;
+    top: 1.2rem;
+    -webkit-filter: invert(50%);
+            filter: invert(50%);
+  }
+
+  #theme:hover {
+    -webkit-transition-duration: 1000ms;
+         -o-transition-duration: 1000ms;
+            transition-duration: 1000ms;
+    -webkit-transition-timing-function: cub;
+         -o-transition-timing-function: cub;
+            transition-timing-function: cub;
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+    cursor: pointer;
+  }
+
+
+#one {
+   -webkit-animation: one 1000ms linear infinite;
+           animation: one 1000ms linear infinite
+}
+
+#two {
+    -webkit-animation: two 1000ms linear infinite;
+            animation: two 1000ms linear infinite
+}
+
+#three {
+    -webkit-animation: three 1000ms linear infinite;
+            animation: three 1000ms linear infinite
+}
+
+@-webkit-keyframes three {
+    0% {
+        opacity: 10%;
+    }
+    50% {
+        opacity: 50%;
+    }
+    75% {
+        opacity: 100%; 
+    }
+    100% {
+        opacity: 10%;
+    }
+}
+
+@keyframes three {
+    0% {
+        opacity: 10%;
+    }
+    50% {
+        opacity: 50%;
+    }
+    75% {
+        opacity: 100%; 
+    }
+    100% {
+        opacity: 10%;
+    }
+}
+
+@-webkit-keyframes two {
+    0% {
+        opacity: 50%;
+    }
+    50% {
+        opacity: 100%;
+    }
+    75% {
+        opacity: 500%; 
+    }
+    100% {
+        opacity: 10%;
+    }
+}
+
+@keyframes two {
+    0% {
+        opacity: 50%;
+    }
+    50% {
+        opacity: 100%;
+    }
+    75% {
+        opacity: 500%; 
+    }
+    100% {
+        opacity: 10%;
+    }
+}
+
+@-webkit-keyframes one {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 50%;
+    }
+    75% {
+        opacity: 10%; 
+    }
+    100% {
+        opacity: 50%;
+    }
+}
+
+@keyframes one {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 50%;
+    }
+    75% {
+        opacity: 10%; 
+    }
+    100% {
+        opacity: 50%;
+    }
+}
